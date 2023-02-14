@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom';
 
 
 ReactDOM.render(
-  <h1>Hello World!</h1>,
+  <div><h1>Sarah's <br></br>
+  Knitting <br></br>
+  Corner!</h1>
+  </div>,
   document.getElementById("root")
 );

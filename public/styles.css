@@ -1,0 +1,17 @@
+h1 {
+    color: rgb(250, 227, 191);
+    /* font-family: 'Shrikhand', cursive; */
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 3rem;
+    transform: skewY(-14deg);
+    padding: 4%;
+}
+
+div {
+    position: relative;
+    top: -100px;
+}
+
+body {
+    background: linear-gradient(0.25turn,pink, purple, rgb(14, 14, 178), rgb(36, 174, 36))
+}
