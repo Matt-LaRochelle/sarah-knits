@@ -5,9 +5,12 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavbarTop() {
   return (
-    <Navbar className="pink-fade" expand="lg">
+    <Navbar bg="myRed" expand="lg">
       <Container>
-        <Navbar.Brand className="nav-text" href="#home">Sarah's Knitting Corner</Navbar.Brand>
+        <Navbar.Brand ms-*(.25rem) className="nav-text" href="#home">
+          <img src=".../public/cat.png" alt="cat with yarn"></img>
+          Sarah's Knitting Corner
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

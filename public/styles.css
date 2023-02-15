@@ -2,20 +2,29 @@ body {
     background: rgb(173, 43, 43);
 }
 
+Navbar.Brand {
+    font-size: 100px;
+}
+
+.bg-myRed{
+    background-color: crimson;
+}
+
 .pink-fade {
     background: linear-gradient(0.25turn,purple, pink);
-    color: rgb(250, 227, 191);
-    /* font-family: 'Shrikhand', cursive; */
-    padding: 4%;
 }
 
 .nav-text {
     color: rgb(250, 227, 191);
     font-family: 'Just Me Again Down Here', cursive;
-    font-size: 3rem;
+        /* font-family: 'Shrikhand', cursive; */
 }
 
 .navbar-brand {
     color: rgb(250, 227, 191);
-    font-size: 3rem;
+}
+
+.nav-link {
+    border-style:solid;
+    margin: 5px;
 }
