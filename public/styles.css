@@ -1,17 +1,21 @@
-h1 {
+body {
+    background: rgb(173, 43, 43);
+}
+
+.pink-fade {
+    background: linear-gradient(0.25turn,purple, pink);
     color: rgb(250, 227, 191);
     /* font-family: 'Shrikhand', cursive; */
-    font-family: 'Just Me Again Down Here', cursive;
-    font-size: 3rem;
-    transform: skewY(-14deg);
     padding: 4%;
 }
 
-div {
-    position: relative;
-    top: -100px;
+.nav-text {
+    color: rgb(250, 227, 191);
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 3rem;
 }
 
-body {
-    background: linear-gradient(0.25turn,pink, purple, rgb(14, 14, 178), rgb(36, 174, 36))
+.navbar-brand {
+    color: rgb(250, 227, 191);
+    font-size: 3rem;
 }
