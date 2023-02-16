@@ -1,11 +1,12 @@
 import React from "react";
-import NavbarTop from './NavbarTop.js';
+import NavbarTop, { homeClick, aboutClick, contactClick } from './NavbarTop.js';
 import About from './About.jsx';
 import Contact from './Contact.jsx';
 import Home from './Home.jsx';
+import Footer from './Footer.jsx';
 
-var navAbout = false;
-var navContact = false;
+var navAbout = true;
+var navContact = true;
 var navHome = true;
 
 
@@ -20,6 +21,7 @@ function App() {
         {
             navHome === true && <Home />
         }
+        <Footer />
         </div>);
 };
 

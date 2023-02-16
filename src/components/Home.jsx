@@ -1,19 +1,20 @@
 import React from "react";
+import Product from "./Product.jsx";
 
 function Home() {
     return (
         <div>
             <div>
-            Hello
+            <Product />
             </div>
             <div>
-            Hi
+            <Product />
             </div>
             <div>
-            How are you?
+            <Product />
             </div>
             <div>
-            I'm a ball of yarn!
+            <Product />
             </div>
         </div>
     );
