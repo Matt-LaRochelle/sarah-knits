@@ -7,12 +7,9 @@ Navbar.Brand {
 }
 
 .bg-myRed{
-    background-color: crimson;
+    background: linear-gradient(0.25turn,purple, rgb(255, 112, 212));
 }
 
-.pink-fade {
-    background: linear-gradient(0.25turn,purple, pink);
-}
 
 .nav-text {
     color: rgb(250, 227, 191);

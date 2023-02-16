@@ -3,11 +3,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+// function homeClick() {
+//   navHome != prevValue;
+// }
+
+// onClick={homeClick}
+
 function NavbarTop() {
   return (
     <Navbar bg="myRed" expand="lg">
       <Container>
-        <Navbar.Brand className="nav-text" href="#home">
+        <Navbar.Brand className="nav-text" href="#home" >
           <img src=".../public/cat.png" alt="cat with yarn"></img>
           Sarah's Knitting Corner
         </Navbar.Brand>
