@@ -7,7 +7,7 @@ function NavbarTop() {
   return (
     <Navbar bg="myRed" expand="lg">
       <Container>
-        <Navbar.Brand ms-*(.25rem) className="nav-text" href="#home">
+        <Navbar.Brand className="nav-text" href="#home">
           <img src=".../public/cat.png" alt="cat with yarn"></img>
           Sarah's Knitting Corner
         </Navbar.Brand>

@@ -1,20 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarTop from './components/NavbarTop.js';
-import About from './components/About.jsx';
-import Contact from './components/Contact.jsx';
-
-
+import App from "./components/App";
 
 
 ReactDOM.render(
-  <div>
-  <NavbarTop />
-  <About />
-  <Contact />
-
-
-  </div>,
+  <App />,
   document.getElementById("root")
 );
