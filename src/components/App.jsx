@@ -5,8 +5,8 @@ import Contact from './Contact.jsx';
 import Home from './Home.jsx';
 import Footer from './Footer.jsx';
 
-var navAbout = true;
-var navContact = true;
+var navAbout = false;
+var navContact = false;
 var navHome = true;
 
 

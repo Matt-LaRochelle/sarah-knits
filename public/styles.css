@@ -31,6 +31,12 @@ Navbar.Brand {
     padding: 0 10px;
 }
 
+.homeTitle {
+    text-align: center;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 3rem;
+}
+
 .row {
     margin: 0 -5px;
     width: 100%;
@@ -82,7 +88,7 @@ Navbar.Brand {
 .prodimg {
     height: 200px;
     width: 200px;
-    padding: 10px;
+    /* padding: 2px; */
     border: solid;
     border-width: 5px;
     border-radius: 4%;
