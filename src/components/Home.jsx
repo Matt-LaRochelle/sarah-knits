@@ -3,17 +3,17 @@ import Product from "./Product.jsx";
 
 function Home() {
     return (
-        <div>
-            <div>
+        <div className="row">
+            <div className="column">
             <Product />
             </div>
-            <div>
+            <div className="column">
             <Product />
             </div>
-            <div>
+            <div className="column">
             <Product />
             </div>
-            <div>
+            <div className="column">
             <Product />
             </div>
         </div>
