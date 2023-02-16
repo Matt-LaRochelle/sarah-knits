@@ -1,10 +1,10 @@
 import React from "react";
 
-function Product() {
+function Product(props) {
     return <div className="product">
-    <img src="../../public/cat.png" className="prodimg" alt="img of cat with yarn"/>
-    <h3>Title of Project</h3>
-    <p>Brief Description</p>
+    <img src={props.imgURL} className="prodimg" alt={props.alt}/>
+    <h3>{props.title}</h3>
+    <p>{props.description}</p>
     <button type="submit">Add to Cart</button>
     </div>
 }

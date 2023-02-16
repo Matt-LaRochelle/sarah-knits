@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     background: rgb(173, 43, 43);
 }
@@ -57,24 +61,30 @@ Navbar.Brand {
     /* box-shadow: 0, 4px, 8px, 0, rgba(0, 0, 0, 0.2); */
     padding: 16px;
     text-align: center;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 275px;
     margin: 50px;
-    background-color: #ddc9c9;
-    border-style: 5px solid;
-    border-color: blue;
+    background-color: #e0dfdf;
+    border-style: solid;
+    border-radius: 4%;
+    border-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+/* @media screen and (max-width: 600px)
+
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+} */
 
 .prodimg {
-    /* height: 700px;
-    width: 700px; */
+    height: 200px;
+    width: 200px;
     padding: 10px;
     border: solid;
+    border-width: 5px;
+    border-radius: 4%;
+    border-color: green;
 }
