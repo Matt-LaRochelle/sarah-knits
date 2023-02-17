@@ -13,10 +13,12 @@ function createCard(product) {
 
 function Home() {
     return (
-        <div className="row">
+        <div className="product-full">
         <h1 className="product-title">My Knitting Projects</h1>
-            <div>
-            {products.map(createCard)}
+            <div className="container">
+                <div>
+                {products.map(createCard)}
+                </div>
             </div>
         </div>
     );

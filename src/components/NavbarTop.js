@@ -36,21 +36,25 @@ function contactClick() {
 
 function NavbarTop() {
   return (
-    <div className="nav-bar nav-pink">
-      <div className="nav-bar-title">
-        <img src="./cat.png" alt="cat with ball of yarn" className="nav-bar-img"/>
-        <p className="t1">Sarah's</p><p className="t2">Knitting</p> <p className="t3">Corner</p>
-      </div>
-      <div className="nav-bar-link">
-        About
-      </div>
-      <div className="nav-bar-link">
-        Contact
-      </div>
-      <div className="nav-bar-link">
-        Cart
-      </div>
-    </div>
+    <header>
+      <nav>
+      <ul class="nav-list nav-pink">
+          <li>
+            <img src="./cat.png" alt="cat with ball of yarn" className="nav-image"/>
+            Sarah's Knitting Corner
+          </li>
+          <li>
+            About
+          </li>
+          <li>
+            Contact
+          </li>
+          <li>
+            Cart
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

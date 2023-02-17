@@ -1,6 +1,6 @@
 
 .copyright {
-    margin: 0px, auto, 5px, auto;
+    margin: 0px, auto, 2px, auto;
     color:rgb(101, 85, 125);
     font-weight: 500;
     text-align: center;
@@ -8,71 +8,51 @@
     left: 0px;
     bottom: 0px;
     right: 0px;
+    background-color: blue;
 }
 
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-    /* background: black; */
+/* ---------------------------NAVBAR--------------------------- */
+
+
+.nav-list{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.product-title {
-    text-align: center;
-    font-family: 'Just Me Again Down Here', cursive;
-    color:blue;
-    font-size: 3rem;
-    position: relative;
-    top: 120px;
-}
-
-.row {
-    margin: 0 -5px;
-    width: 100%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-
-.nav-bar-link {
+/* .nav-bar-link {
     color: rgb(250, 227, 191);
     font-family: 'Just Me Again Down Here', cursive;
         /* font-family: 'Shrikhand', cursive; */
-    font-size: 28px;
+    /* font-size: 28px;
     border-style:solid;
     margin: 5px;
     display: inline-block;
     position: relative;
     left: 300px;
     bottom: 200px;
-}
+} */
 
-.nav-bar-link:hover {
+/* .nav-bar-link:hover {
     color: rgb(216, 180, 230);
     background-color: rgb(166, 100, 170);
-}
+} */
 
-.nav-bar-img {
+.nav-image {
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
-    border-color:rgb(48, 14, 98);
+    border-color:rgb(180, 144, 234);
     margin: auto, 20px, auto, -10px;
-    position: relative;
-    right: -80px;
-    bottom: -56px;
-    transform: rotate(30deg);
     display: inline-block;
 }
 
-.nav-bar-img:hover {
+.nav-image:hover {
     border-color:aqua;
 }
 
@@ -101,30 +81,35 @@
     color:blueviolet;
 }
 
-.t1 {
-    position: relative;
-    bottom: -10px;
-    right: -160px;
-    
+/* -------------------PRODUCTS--------------------------- */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: white;
+    justify-content: space-evenly;
+    gap: 1rem;
 }
 
-.t2 {
-    position: relative;
-    bottom: 30px;
-    right: -180px;
+.product-full {
+    background-color: black;
 }
-
-.t3 {
+.product-title {
+    text-align: center;
+    font-family: 'Just Me Again Down Here', cursive;
+    color: rgb(185, 61, 150);
+    font-size: 3rem;
     position: relative;
-    bottom: 70px;
-    right: -220px;
+    top: 120px;
 }
 
 .product {
-    /* box-shadow: 0, 4px, 8px, 0, rgba(0, 0, 0, 0.2); */
     display: inline-block;
     padding: 16px;
     text-align: center;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 1.3rem;
     height: 350px;
     width: 275px;
     margin: 20px;
@@ -133,24 +118,15 @@
     background-color: #e0dfdf;
     border-style: solid;
     border-radius: 4%;
-    border-color: green;
+    border-color: rgb(96, 0, 128);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-/* @media screen and (max-width: 600px)
-
-.column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-} */
 
 .prod-img {
     height: 200px;
     width: 200px;
-    /* padding: 2px; */
     border: solid;
     border-width: 5px;
     border-radius: 4%;
-    border-color: green;
+    border-color: rgb(96, 0, 128);
 }
