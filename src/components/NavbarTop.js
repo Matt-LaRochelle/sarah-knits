@@ -41,15 +41,16 @@ function NavbarTop() {
   return (
     <Navbar bg="myRed" expand="lg">
       <Container>
-        <Navbar.Brand className="nav-text" href="#home" onClick={homeClick}>
-          <img src="./public/cat.png" alt="cat with yarn"></img>
-          Sarah's Knitting Corner
+        <Navbar.Brand href="#home" onClick={homeClick}>
+          <img src="../cat.png" alt="cat with yarn" className="navimg"></img>
+          <p className="nav-title t1" >Sarah's</p><p className="nav-title t2">Knitting</p><p className="nav-title t3">Corner</p>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link className="nav-text" href="#about" onClick={aboutClick}>About Me</Nav.Link>
             <Nav.Link className="nav-text" href="#link" onClick={contactClick}>Contact</Nav.Link>
+            <Nav.Link className="nav-text" href="#cart">Cart</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

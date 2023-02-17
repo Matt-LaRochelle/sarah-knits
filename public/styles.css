@@ -29,6 +29,7 @@ Navbar.Brand {
     float: left;
     width: 25%;
     padding: 0 10px;
+    /* background: black; */
 }
 
 .homeTitle {
@@ -53,7 +54,10 @@ Navbar.Brand {
     font-family: 'Just Me Again Down Here', cursive;
         /* font-family: 'Shrikhand', cursive; */
 }
-
+.nav-text:hover {
+    color: rgba(250, 227, 191, .2);
+    background-color: lightpink;
+}
 .navbar-brand {
     color: rgb(250, 227, 191);
 }
@@ -63,8 +67,52 @@ Navbar.Brand {
     margin: 5px;
 }
 
+.navimg {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color:rgb(48, 14, 98);
+    margin: auto, 20px, auto, -10px;
+}
+
+.navimg:hover {
+    border-color:aqua;
+}
+
+.nav-title {
+    display: inline-block;
+    font-family: 'Just Me Again Down Here', cursive;
+    /* background-color: rgb(219, 61, 61); */
+    transform: rotate(-30deg);
+    font-size: 36px;
+    color: rgb(250, 227, 191);
+    margin: -20px;
+    border: 20px;
+}
+
+.t1 {
+    position: relative;
+    bottom: 16px;
+    right: -20px;
+    
+}
+
+.t2 {
+    position: relative;
+    bottom: -6px;
+}
+
+.t3 {
+    position: relative;
+    bottom: -28px;
+    right: 18px;
+}
+
 .product {
     /* box-shadow: 0, 4px, 8px, 0, rgba(0, 0, 0, 0.2); */
+    display: inline-block;
     padding: 16px;
     text-align: center;
     height: 350px;
