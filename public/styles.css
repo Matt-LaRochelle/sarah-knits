@@ -8,7 +8,7 @@
     left: 0px;
     bottom: 0px;
     right: 0px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 /* ---------------------------NAVBAR--------------------------- */
@@ -18,28 +18,24 @@
     display: flex;
     justify-content:space-evenly;
     gap: 1rem;
-    margin: 0;
+    margin: 3.4%;
     padding: 0;
     list-style: none;
+    border-style: solid;
 }
 
-/* .nav-bar-link {
-    color: rgb(250, 227, 191);
-    font-family: 'Just Me Again Down Here', cursive;
-        /* font-family: 'Shrikhand', cursive; */
-    /* font-size: 28px;
-    border-style:solid;
-    margin: 5px;
-    display: inline-block;
-    position: relative;
-    left: 300px;
-    bottom: 200px;
-} */
+.nav-list li {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
 
-/* .nav-bar-link:hover {
-    color: rgb(216, 180, 230);
-    background-color: rgb(166, 100, 170);
-} */
+.nav-corner {
+    width: 350px;
+    border-style:solid;
+    border-color: blue;
+    display: inline-block;
+    z-index: 3;
+}
 
 .nav-image {
     height: 80px;
@@ -48,7 +44,7 @@
     border-width: 3px;
     border-style: solid;
     border-color:rgb(180, 144, 234);
-    margin: auto, 20px, auto, -10px;
+    margin: .8%;
     display: inline-block;
 }
 
@@ -56,63 +52,74 @@
     border-color:aqua;
 }
 
+.nav-title {
+    display: inline-block;
+    font-family: 'Just Me Again Down Here', cursive;
+    font-size: 34px;
+    color: rgb(250, 227, 191);
+}
+
 .nav-pink{
     background: linear-gradient(0.25turn,purple, rgb(255, 112, 212));
-    display: inline-block;
     width: 100%;
     height: 100px;
     position: fixed;
     top: 0px;
+    z-index: 2;
+    border-style: solid;
 }
 
-
-.nav-bar-title {
+.nav-items{
     display: inline-block;
-    font-family: 'Just Me Again Down Here', cursive;
-    /* background-color: rgb(219, 61, 61); */
-    transform: rotate(-30deg);
-    font-size: 42px;
-    color: rgb(250, 227, 191);
-    margin: -20px;
-    border: 20px;
+    width: 70%;
 }
 
-.nav-bar-title:hover{
-    color:blueviolet;
+@media (min-width: 830px) {
+    .nav-list {
+        justify-content: flex-start;
+    }
 }
+
 
 /* -------------------PRODUCTS--------------------------- */
 
 .container {
-    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    right: 10px;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
     background: white;
-    justify-content: space-evenly;
-    gap: 1rem;
+    /* justify-content: space-evenly;
+    gap: 1rem; */
+    height: auto;
+    border-style: solid;
 }
 
 .product-full {
-    background-color: black;
+    /* background-color: black; */
 }
 .product-title {
     text-align: center;
     font-family: 'Just Me Again Down Here', cursive;
     color: rgb(185, 61, 150);
+    background-color: blue;
     font-size: 3rem;
     position: relative;
     top: 120px;
 }
 
 .product {
-    display: inline-block;
-    padding: 16px;
+    /* display: inline-block; */
+    padding: 1.4%;
     text-align: center;
     font-family: 'Just Me Again Down Here', cursive;
     font-size: 1.3rem;
-    height: 350px;
-    width: 275px;
-    margin: 20px;
+    height: 24%;
+    width: 20%;
+    margin: 1%;
     position: relative;
     top: 200px;
     background-color: #e0dfdf;
@@ -123,8 +130,8 @@
 }
 
 .prod-img {
-    height: 200px;
-    width: 200px;
+    height: 54%;
+    width: 60%;
     border: solid;
     border-width: 5px;
     border-radius: 4%;

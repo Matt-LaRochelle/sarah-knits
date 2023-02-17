@@ -37,22 +37,24 @@ function contactClick() {
 function NavbarTop() {
   return (
     <header>
-      <nav>
-      <ul class="nav-list nav-pink">
-          <li>
-            <img src="./cat.png" alt="cat with ball of yarn" className="nav-image"/>
-            Sarah's Knitting Corner
-          </li>
-          <li>
-            About
-          </li>
-          <li>
-            Contact
-          </li>
-          <li>
-            Cart
-          </li>
-        </ul>
+      <nav className="nav-pink">
+        <div className="nav-corner">
+          <img src="./cat.png" alt="cat with ball of yarn" className="nav-image"/>
+          <h2 className="nav-title">Sarah's Knitting Corner</h2>
+        </div>
+        <div className="nav-items">
+          <ul class="nav-list">
+            <li>
+              About
+            </li>
+            <li>
+              Contact
+            </li>
+            <li>
+              Cart
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
