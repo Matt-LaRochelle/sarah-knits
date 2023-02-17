@@ -1,7 +1,4 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 
 
 
@@ -39,22 +36,21 @@ function contactClick() {
 
 function NavbarTop() {
   return (
-    <Navbar bg="myRed" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home" onClick={homeClick}>
-          <img src="../cat.png" alt="cat with yarn" className="navimg"></img>
-          <p className="nav-title t1" >Sarah's</p><p className="nav-title t2">Knitting</p><p className="nav-title t3">Corner</p>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link className="nav-text" href="#about" onClick={aboutClick}>About Me</Nav.Link>
-            <Nav.Link className="nav-text" href="#link" onClick={contactClick}>Contact</Nav.Link>
-            <Nav.Link className="nav-text" href="#cart">Cart</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className="nav-bar nav-pink">
+      <div className="nav-bar-title">
+        <img src="./cat.png" alt="cat with ball of yarn" className="nav-bar-img"/>
+        <p className="t1">Sarah's</p><p className="t2">Knitting</p> <p className="t3">Corner</p>
+      </div>
+      <div className="nav-bar-link">
+        About
+      </div>
+      <div className="nav-bar-link">
+        Contact
+      </div>
+      <div className="nav-bar-link">
+        Cart
+      </div>
+    </div>
   );
 };
 

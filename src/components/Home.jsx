@@ -14,8 +14,8 @@ function createCard(product) {
 function Home() {
     return (
         <div className="row">
-        <h1 className="homeTitle">My Knitting Projects</h1>
-            <div className="column">
+        <h1 className="product-title">My Knitting Projects</h1>
+            <div>
             {products.map(createCard)}
             </div>
         </div>

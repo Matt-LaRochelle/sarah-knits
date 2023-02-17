@@ -1,28 +1,13 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-    background: rgb(173, 43, 43);
-}
-
-Navbar.Brand {
-    font-size: 100px;
-}
-
-.bg-myRed{
-    background: linear-gradient(0.25turn,purple, rgb(255, 112, 212));
-}
 
 .copyright {
-    margin: 0, auto, 5px, auto;
+    margin: 50px, auto, 5px, auto;
     color:rgb(101, 85, 125);
     font-weight: 500;
     text-align: center;
     position: sticky;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
 }
 
 .column {
@@ -32,10 +17,13 @@ Navbar.Brand {
     /* background: black; */
 }
 
-.homeTitle {
+.product-title {
     text-align: center;
     font-family: 'Just Me Again Down Here', cursive;
+    color:blue;
     font-size: 3rem;
+    position: relative;
+    top: 120px;
 }
 
 .row {
@@ -49,65 +37,87 @@ Navbar.Brand {
     clear: both;
 }
 
-.nav-text {
+
+
+.nav-bar-link {
     color: rgb(250, 227, 191);
     font-family: 'Just Me Again Down Here', cursive;
         /* font-family: 'Shrikhand', cursive; */
-}
-.nav-text:hover {
-    color: rgba(250, 227, 191, .2);
-    background-color: lightpink;
-}
-.navbar-brand {
-    color: rgb(250, 227, 191);
-}
-
-.nav-link {
+    font-size: 28px;
     border-style:solid;
     margin: 5px;
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    bottom: 200px;
 }
 
-.navimg {
-    height: 70px;
-    width: 70px;
+.nav-bar-link:hover {
+    color: rgb(216, 180, 230);
+    background-color: rgb(166, 100, 170);
+}
+
+.nav-bar-img {
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     border-width: 2px;
     border-style: solid;
     border-color:rgb(48, 14, 98);
     margin: auto, 20px, auto, -10px;
+    position: relative;
+    right: -80px;
+    bottom: -56px;
+    transform: rotate(30deg);
+    display: inline-block;
 }
 
-.navimg:hover {
+.nav-bar-img:hover {
     border-color:aqua;
 }
 
-.nav-title {
+.nav-pink{
+    background: linear-gradient(0.25turn,purple, rgb(255, 112, 212));
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+}
+
+
+.nav-bar-title {
     display: inline-block;
     font-family: 'Just Me Again Down Here', cursive;
     /* background-color: rgb(219, 61, 61); */
     transform: rotate(-30deg);
-    font-size: 36px;
+    font-size: 42px;
     color: rgb(250, 227, 191);
     margin: -20px;
     border: 20px;
 }
 
+.nav-bar-title:hover{
+    color:blueviolet;
+}
+
 .t1 {
     position: relative;
-    bottom: 16px;
-    right: -20px;
+    bottom: -10px;
+    right: -160px;
     
 }
 
 .t2 {
     position: relative;
-    bottom: -6px;
+    bottom: 30px;
+    right: -180px;
 }
 
 .t3 {
     position: relative;
-    bottom: -28px;
-    right: 18px;
+    bottom: 70px;
+    right: -220px;
 }
 
 .product {
@@ -117,7 +127,9 @@ Navbar.Brand {
     text-align: center;
     height: 350px;
     width: 275px;
-    margin: 50px;
+    margin: 20px;
+    position: relative;
+    top: 200px;
     background-color: #e0dfdf;
     border-style: solid;
     border-radius: 4%;
@@ -133,7 +145,7 @@ Navbar.Brand {
     margin-bottom: 20px;
 } */
 
-.prodimg {
+.prod-img {
     height: 200px;
     width: 200px;
     /* padding: 2px; */
