@@ -1,14 +1,27 @@
 
 .copyright {
-    margin: 0px, auto, 2px, auto;
-    color:rgb(101, 85, 125);
-    font-weight: 500;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    line-height: 0px;
+    font-size: 0.7em;
     text-align: center;
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    /* background-color: blue; */
+    bottom:0;
+}
+
+.copyright-footer {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    top: 660px;
+    background-color: #333333;
+}
+
+@media (max-width: 993) {
+    .copyright-footer {
+        position: relative;
+        top: 1300px;
+    }
 }
 
 /* ---------------------------NAVBAR--------------------------- */
@@ -43,7 +56,7 @@
 
 .nav-list li {
     flex: 1;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px;
 }
 
@@ -63,6 +76,10 @@
     .nav-pink{
         height: 136px;
     }
+
+    /* .product-title {
+        top: 3px;
+    } */
 }
 
 /* -------------------PRODUCTS--------------------------- */
@@ -72,14 +89,13 @@
     top: 200px;
     left: 10px;
     right: 10px;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;*/
-    background: white;
-    /* justify-content: space-evenly;
-    gap: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    /* background: white; */
+    justify-content: space-evenly;
+    gap: 1rem;
     height: auto;
-    border-style: solid;
+    /* border-style: solid; */
 }
 
 .product-full {
@@ -89,7 +105,7 @@
     text-align: center;
     font-family: 'Just Me Again Down Here', cursive;
     color: rgb(185, 61, 150);
-    background-color: blue;
+    /* background-color: blue; */
     font-size: 3rem;
     position: relative;
     top: 120px;
@@ -101,11 +117,11 @@
     text-align: center;
     font-family: 'Just Me Again Down Here', cursive;
     font-size: 1.3rem;
-    height: 24%;
-    width: 20%;
+    height: 300px;
+    width: 200px;
     margin: 1%;
     position: relative;
-    top: 200px;
+    /* top: 200px; */
     background-color: #e0dfdf;
     border-style: solid;
     border-radius: 4%;
@@ -114,8 +130,8 @@
 }
 
 .prod-img {
-    height: 54%;
-    width: 60%;
+    height: 150px;
+    width: 150px;
     border: solid;
     border-width: 5px;
     border-radius: 4%;
