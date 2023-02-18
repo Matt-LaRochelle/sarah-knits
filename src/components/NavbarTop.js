@@ -38,23 +38,22 @@ function NavbarTop() {
   return (
     <header>
       <nav className="nav-pink">
-        <div className="nav-corner">
-          <img src="./cat.png" alt="cat with ball of yarn" className="nav-image"/>
-          <h2 className="nav-title">Sarah's Knitting Corner</h2>
-        </div>
-        <div className="nav-items">
+        <h1 className="nav-items">
           <ul class="nav-list">
             <li>
-              About
+              Sarah's Knitting Corner
             </li>
             <li>
-              Contact
+            About
             </li>
             <li>
-              Cart
+            Contact
+            </li>
+            <li>
+            Cart
             </li>
           </ul>
-        </div>
+        </h1>
       </nav>
     </header>
   );
