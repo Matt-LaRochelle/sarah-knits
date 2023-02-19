@@ -43,11 +43,19 @@
     text-align: center;
 }
 
+.nav-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color:rgba(0, 0, 0, 0.2);
+
+}
+
 .nav-list{
     display: flex;
     flex-wrap: nowrap;
-    gap: 2rem;
-    justify-content:space-evenly;
+    justify-content:space-around;
 
     margin: 0;
     padding: 0;
@@ -56,8 +64,9 @@
 
 .nav-list li {
     flex: 1;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     padding: 10px;
+    flex-wrap: nowrap;
 }
 
 .nav-list li:hover {

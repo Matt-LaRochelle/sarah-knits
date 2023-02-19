@@ -41,6 +41,9 @@ function NavbarTop() {
         <h1 className="nav-items">
           <ul class="nav-list">
             <li>
+              <img src="./cat.png" className="nav-image" alt="cat with yarn"></img>
+            </li>
+            <li>
               Sarah's Knitting Corner
             </li>
             <li>
