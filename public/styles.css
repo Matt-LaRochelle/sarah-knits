@@ -33,7 +33,7 @@
     position: fixed;
     top: 0px;
     z-index: 2;
-    border-style: solid;
+    /* border-style: solid; */
 }
 
 .nav-items{
@@ -48,8 +48,27 @@
     width: 60px;
     border-radius: 50%;
     border-style: solid;
-    border-color:rgba(0, 0, 0, 0.2);
+    border-width: 3px;
+    border-color:rgb(96, 0, 128);;
+    margin: -5px;
 
+}
+
+.nav-image:hover {
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+	animation: 4s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .nav-list{
@@ -67,13 +86,14 @@
     border: 1px solid black;
     padding: 10px;
     flex-wrap: nowrap;
-    
+    font-style: normal;
 }
 
 .nav-list li:hover {
     font-size: 35px;
     flex-wrap: nowrap;
     color: rgb(244, 236, 222);
+    font-style: normal;
 }
 
 @media (max-width: 1135px) {

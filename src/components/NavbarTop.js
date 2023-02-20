@@ -24,7 +24,7 @@ function NavbarTop() {
         <h1 className="nav-items">
           <ul class="nav-list">
             <li>
-              <img src="./cat.png" className="nav-image" alt="cat with yarn"></img>
+              <Link to="/kitty"><img src="./cat.png" className="nav-image" alt="cat with yarn"></img></Link>
             </li>
             <li>
               <Link to="/">Sarah's Knitting Corner</Link>
@@ -36,7 +36,7 @@ function NavbarTop() {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              Cart
+              <Link to="/cart">Cart</Link>
             </li>
           </ul>
         </h1>
