@@ -1,34 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
 function homeClick() {
-  // if (navHome === true) {
-  //   navHome === false;
-  // } else {
-  //   navHome === true;
-  // }
-  // return navHome;
   console.log("Clicked Home")
 }
 
 function aboutClick() {
-  // if (navAbout === true) {
-  //   navAbout === false;
-  // } else {
-  //   navAbout === true;
-  // }
-  // return navAbout;
   console.log("Clicked About")
 }
 
 function contactClick() {
-  // if (navContact === true) {
-  //   navContact === false;
-  // } else {
-  //   navContact === true;
-  // }
-  // return navContact;
   console.log("Clicked Contact")
 }
 
@@ -44,16 +27,16 @@ function NavbarTop() {
               <img src="./cat.png" className="nav-image" alt="cat with yarn"></img>
             </li>
             <li>
-              Sarah's Knitting Corner
+              <Link to="/">Sarah's Knitting Corner</Link>
             </li>
             <li>
-            About
+              <Link to="/about">About</Link>
             </li>
             <li>
-            Contact
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
-            Cart
+              Cart
             </li>
           </ul>
         </h1>
