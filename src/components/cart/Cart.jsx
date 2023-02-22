@@ -3,11 +3,11 @@ import styles from "./Cart.module.css";
 
 function Cart() {
     return (
-        <div>
+        <div className={styles.content}>
             <h1 className={styles.title}>Cart</h1>
-            <p>Item 1</p>
-            <p>Item 2</p>
-            <p>Pay here?</p>
+            <p className={styles.content}>Item 1</p>
+            <p className={styles.content}>Item 2</p>
+            <p className={styles.content}>Pay here?</p>
         </div>
     );
 }
