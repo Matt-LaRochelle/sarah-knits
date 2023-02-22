@@ -11,6 +11,9 @@ function Contact() {
             <br></br>
             <button type="submit">Submit</button>
         </form>
+        <div className={styles.socials}>
+            <h2 className={styles.title}>Follow me on social media</h2>
+        </div>
         </div>
     );
 };
