@@ -1,6 +1,7 @@
 import React from "react";
 import Product from "./Product.jsx";
-import products from "../products";
+import products from "../../products";
+import styles from "./Home.module.css";
 
 function createCard(product) {
     return <Product 
@@ -13,10 +14,10 @@ function createCard(product) {
 
 function Home() {
     return (
-        <div className="product-full">
-        <h1 className="product-title">My Knitting Projects</h1>
+        <div className={styles.page}>
+        <h1 className={styles.main_title}>My Knitting Projects</h1>
             <div>
-                <div className="container">
+                <div className={styles.container}>
                 {products.map(createCard)}
                 </div>
             </div>
