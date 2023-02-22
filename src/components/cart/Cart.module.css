@@ -1,6 +1,11 @@
+.full {
+    background-color: rgb(210, 240, 210);
+    height: 120vh;
+}
+
 .title {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
     color:rgb(58, 7, 58);
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
@@ -13,4 +18,57 @@
     color:rgb(58, 7, 58);
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.purchase_container hr {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(175, 177, 175);
+}
+
+.purchases {
+    display: flex;
+    justify-content: space-evenly;
+}
+.purchase_image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: silver;
+    box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, .2);
+
+}
+
+.purchase_description {
+    /* background-color: blue; */
+    line-height: 90px;
+    padding-left: 10px;
+    border-left: solid;
+    border-color: rgb(175, 177, 175);
+    font-family: "Montserrat", sans-serif;
+}
+
+.checkout {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.btn {
+    margin: 60px;
+    padding: 10px;
 }

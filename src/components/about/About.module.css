@@ -1,6 +1,11 @@
+.full {
+    background-color: rgb(210, 240, 210);
+    height: 120vh;
+}
+
 .title {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
     color:rgb(58, 7, 58);
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;

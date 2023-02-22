@@ -4,23 +4,6 @@ import styles from './Navbar.module.css';
 import {AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 
-
-function homeClick() {
-  console.log("Clicked Home")
-}
-
-function aboutClick() {
-  console.log("Clicked About")
-}
-
-function contactClick() {
-  console.log("Clicked Contact")
-}
-
-
-  
-
-
 function Navbar() {
 
   const [nav, setNav] = useState(false);
@@ -40,7 +23,10 @@ function Navbar() {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link to="/cart">Cart</Link>
+            <Link to="/cart">
+ 
+ 
+ <i class="fa-solid fa-cart-shopping fa-2xs"></i></Link>
           </li>
         </ul>
       </nav>

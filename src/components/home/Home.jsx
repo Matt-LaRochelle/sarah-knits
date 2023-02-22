@@ -14,7 +14,7 @@ function createCard(product) {
 
 function Home() {
     return (
-        <div className={styles.page}>
+        <div className={styles.full}>
         <h1 className={styles.title}>My Knitting Projects</h1>
             <div>
                 <div className={styles.container}>

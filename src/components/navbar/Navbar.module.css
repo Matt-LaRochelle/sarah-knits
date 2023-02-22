@@ -5,7 +5,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: linear-gradient(0.25turn, purple, rgb(212, 75, 192));
+    /* background: linear-gradient( rgb(184, 101, 171), purple); */
+    background: linear-gradient(green, rgb(3, 72, 40));
     font-family: 'Just me again down here', sans-serif;
 }
 
@@ -27,9 +28,18 @@
     padding: 1rem;
 }
 
+.menu i{
+    margin-top: 25px;
+}
+
 .navbar a {
     font-size: 2rem;
     color:antiquewhite;
+}
+
+.navbar a:hover {
+    font-size: 2.3rem;
+    color: rgba(250, 235, 215, 0.716)
 }
 
 .mobile_btn {
