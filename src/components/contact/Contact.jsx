@@ -13,6 +13,12 @@ function Contact() {
         </form>
         <div className={styles.socials}>
             <h2 className={styles.title}>Follow me on social media</h2>
+            <div className={styles.socials_container}>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            
         </div>
         </div>
     );

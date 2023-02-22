@@ -23,6 +23,10 @@ button {
     margin-top: 10px;
 }
 
+button:hover {
+    background-color: rgb(58, 7, 58);
+}
+
 .inputText {
     text-align: center;
     margin-top: -30px;
@@ -42,5 +46,20 @@ input {
 }
 
 .socials {
-    margin-top: 200px;
+    margin-top: 300px;
+    color: rgb(109, 32, 172)
 }
+
+.socials_container {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.socials i:hover {
+    color: rgb(58, 7, 58);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
