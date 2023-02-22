@@ -1,0 +1,19 @@
+button {
+    border-radius: 10%;
+    color:white;
+    background-color: blue;
+}
+
+.inputText {
+    text-align: center;
+    border: none;
+}
+
+form input:focus {
+    outline: none;
+}
+
+input {
+    align-items: center;
+}
+

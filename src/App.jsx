@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from './components/navbar/Navbar';
-import About from './components/about/About.jsx';
-import Contact from './components/Contact.jsx';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
 import Home from './components/Home.jsx';
 import Kitty from './components/Kitty.jsx';
 import Cart from './components/Cart.jsx';
@@ -24,10 +24,10 @@ function App() {
                     <Route path="/about">
                         <About />
                     </Route>
-                    {/* <Route path="/contact">
+                    <Route path="/contact">
                         <Contact />
                     </Route>
-                    <Route path="/cart">
+                    {/*<Route path="/cart">
                         <Cart /> */}
                     {/* </Route> */}
                 </Switch>
