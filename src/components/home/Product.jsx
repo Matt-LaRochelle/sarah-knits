@@ -7,7 +7,7 @@ function Product(props) {
             <img src={props.imgURL} className={styles.image} alt={props.alt}/>
             <h3 className={styles.product_title}>{props.title}</h3>
             <p>{props.description}</p>
-            <button type="submit">Add to Cart</button>
+            <button className={styles.button} type="submit">Add to Cart</button>
         </div>
     );
 }

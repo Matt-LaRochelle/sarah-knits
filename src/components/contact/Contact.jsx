@@ -5,9 +5,10 @@ function Contact() {
     return (
         <div>
         <h2 className={styles.title}>Contact Me</h2>
-        <p classNmae={styles.content}>Have any suggestions? Feel free to send me a message!</p>
+        <p className={styles.content}>Have any suggestions? Feel free to send me a message!</p>
         <form className={styles.inputText}>
-            <input type="text" placeholder="Hello!"></input>
+            <input type="text" placeholder="Hey there! I was thinking..."></input>
+            <br></br>
             <button type="submit">Submit</button>
         </form>
         </div>

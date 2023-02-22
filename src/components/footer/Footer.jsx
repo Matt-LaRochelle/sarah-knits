@@ -6,9 +6,9 @@ var year = new Date().getFullYear();
 
 function Footer() {
     return (
-        <footer className={styles.footer}>
+        <div className={styles.footer}>
                 <p className={styles.content}>Copyright © {year}</p>
-        </footer>
+        </div>
     );
 }
 

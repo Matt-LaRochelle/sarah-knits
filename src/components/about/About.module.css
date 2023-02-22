@@ -3,6 +3,7 @@
     margin-top: 30px;
     color:rgb(58, 7, 58);
     font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content {
@@ -11,4 +12,5 @@
     padding: 2rem;
     color:rgb(58, 7, 58);
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
 }

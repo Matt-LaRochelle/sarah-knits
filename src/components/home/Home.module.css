@@ -1,15 +1,15 @@
-.page {
-    background-color: #e6d1ee;
-}
-
 .title {
-    color: black;
     text-align: center;
-    font-family: 'Just me again down here', sans-serif;
+    margin-top: 30px;
+    color:rgb(58, 7, 58);
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .product_title {
     font-size: 2.6rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .image {
@@ -26,16 +26,23 @@
     width: 250px;
     height: 350px;
     margin: 10px;
-    background-color: rgb(114, 207, 114);
+    line-height: 20px;
+    background-color: rgb(92, 118, 172);
     border-radius: 5%;
     box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, .2);
-    font-family: 'Just me again down here', sans-serif;
     text-align: center;
     font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;
 }
 
+.button {
+    padding: 10px;
+    margin-top: -10px;
+    border-radius: 20px;
+}
 .container {
     display: flex;
-    background-color: white;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
