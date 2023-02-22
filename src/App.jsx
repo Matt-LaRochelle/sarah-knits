@@ -3,7 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Home from './components/home/Home';
-import Kitty from './components/Kitty';
+import Kitty from './components/kitty/Kitty';
 import Cart from './components/cart/Cart';
 import Footer from './components/footer/Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -15,9 +15,9 @@ function App() {
             <div>
                 <Navbar />
                 <Switch>
-                    {/* <Route path="/kitty">
+                    <Route path="/kitty">
                         <Kitty />
-                    </Route> */}
+                    </Route>
                     <Route exact path="/">
                         <Home />
                     </Route>

@@ -1,7 +1,41 @@
 .page {
-    background-color: blue;
+    background-color: #e6d1ee;
 }
 
-h1 {
+.title {
     color: black;
+    text-align: center;
+    font-family: 'Just me again down here', sans-serif;
+}
+
+.product_title {
+    font-size: 2.6rem;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    border: 3px;
+    border-style: solid;
+    border-color: silver;
+    border-radius: 5%;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    background-color: rgb(114, 207, 114);
+    border-radius: 5%;
+    box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, .2);
+    font-family: 'Just me again down here', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
 }

@@ -15,7 +15,7 @@ function createCard(product) {
 function Home() {
     return (
         <div className={styles.page}>
-        <h1 className={styles.main_title}>My Knitting Projects</h1>
+        <h1 className={styles.title}>My Knitting Projects</h1>
             <div>
                 <div className={styles.container}>
                 {products.map(createCard)}
