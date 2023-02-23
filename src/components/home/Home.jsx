@@ -3,13 +3,15 @@ import Product from "./Product";
 import products from "../../products";
 import styles from "./Home.module.css";
 
-function createCard(product, {handleAddProduct}) {
+function createCard(product) {
     return <Product 
+        key={product.key}
+        id={product.id}
         title={product.title}
         imgURL={product.imgURL}
         alt={product.alt}
         description={product.description}
-        id={product.id}
+        cart={product.cart}
     />
 }
 
