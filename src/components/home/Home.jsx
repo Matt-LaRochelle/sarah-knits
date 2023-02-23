@@ -1,14 +1,15 @@
 import React from "react";
-import Product from "./Product.jsx";
+import Product from "./Product";
 import products from "../../products";
 import styles from "./Home.module.css";
 
-function createCard(product) {
+function createCard(product, {handleAddProduct}) {
     return <Product 
         title={product.title}
         imgURL={product.imgURL}
         alt={product.alt}
         description={product.description}
+        id={product.id}
     />
 }
 
