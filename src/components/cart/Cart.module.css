@@ -72,3 +72,7 @@
     margin: 60px;
     padding: 10px;
 }
+
+.btn:active {
+    transform: translateY(2px);
+}
