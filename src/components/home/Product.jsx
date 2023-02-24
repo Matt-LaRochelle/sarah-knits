@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Home.module.css";
 
-function Product(props) {
+
+
+function Product(props, {cartItems}) {
+    const [cart, setCart] = useState(-1);
+
     function clickHandler(event) {
-        console.log(props.id, props.cart)
+        setCart(cart * -1);
+        var id = props.id
+        cartItems.push({id, cart})
+        console.log(cartItems)
     }
 
     return (

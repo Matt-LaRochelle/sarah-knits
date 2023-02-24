@@ -11,7 +11,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
 
-    // const [cartItems, setCartItems] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
+
 
     // const handleAddProduct = (product) => {
     //     const ProductExist = cartItems.find((item) => item.id === product.id);
@@ -38,6 +39,7 @@ function App() {
                     </Route>
                     <Route exact path="/">
                         <Home 
+                            cartItems={cartItems}
                             // handleAddProduct={handleAddProduct}
                         />
                     </Route>
@@ -49,7 +51,7 @@ function App() {
                     </Route>
                     <Route path="/cart">
                         <Cart 
-                            // cartItems={cartItems}
+                            cartItems={cartItems}
                             // handleAddProduct={handleAddProduct}
                         /> 
                     </Route>
