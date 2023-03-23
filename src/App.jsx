@@ -13,6 +13,13 @@ function App() {
 
     const [cartItems, setCartItems] = useState([]);
 
+    function handleAddProduct(id) {
+        setCartItems(prevItems => {
+            return [...prevItems, id]
+        })
+        console.log(cartItems)
+    }
+
 
     // const handleAddProduct = (product) => {
     //     const ProductExist = cartItems.find((item) => item.id === product.id);
@@ -40,7 +47,7 @@ function App() {
                     <Route exact path="/">
                         <Home 
                             cartItems={cartItems}
-                            // handleAddProduct={handleAddProduct}
+                            handleAddProduct={handleAddProduct}
                         />
                     </Route>
                     <Route path="/about">
@@ -52,7 +59,7 @@ function App() {
                     <Route path="/cart">
                         <Cart 
                             cartItems={cartItems}
-                            // handleAddProduct={handleAddProduct}
+                            handleAddProduct={handleAddProduct}
                         /> 
                     </Route>
                 </Switch>
