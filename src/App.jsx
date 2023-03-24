@@ -33,7 +33,7 @@ function App() {
                 return data[n].id !== n
             });
         }); 
-        setAmount(cartItems.length - 1);
+        setAmount(cartItems.length - cartItems.length);
     }
 
     return (
