@@ -42,6 +42,16 @@
     color: rgba(250, 235, 215, 0.716)
 }
 
+.cartNumber {
+    background-color: red;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+}
+
 .mobile_btn {
     display: none;
 }
@@ -75,6 +85,11 @@
 
     .active {
         left: 0;
+    }
+
+    .cartNumber {
+        position: relative;
+        top: 15px;
     }
 
     .navbar a {

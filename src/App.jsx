@@ -6,40 +6,32 @@ import Home from './components/home/Home';
 import Kitty from './components/kitty/Kitty';
 import Cart from './components/cart/Cart';
 import Footer from './components/footer/Footer';
+import products from './products';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 function App() {
 
     const [cartItems, setCartItems] = useState([]);
+    const [total, setTotal] = useState(0);
+    const [amount, setAmount] = useState(0);
+    const data = products;
 
     function handleAddProduct(id) {
         setCartItems(prevItems => {
             return [...prevItems, id]
         })
-        console.log(cartItems)
+        setTotal(total + data[id].description)
+        setAmount(cartItems.length)
     }
 
-
-    // const handleAddProduct = (product) => {
-    //     const ProductExist = cartItems.find((item) => item.id === product.id);
-    //     if (ProductExist) {
-    //         setCartItems(
-    //             cartItems.map((item) =>
-    //             item.id === product.id
-    //                 ? { ...ProductExist, quantity: ProductExist.quantity + 1 }
-    //                 : item
-    //         )
-    //         );
-    //     } else {
-    //         setCartItems([...cartItems, {...product, quantity: 1}]);
-    //     }
-    // };
 
     return (
         <Router>
             <div>
-                <Navbar />
+                <Navbar 
+                    cartLength={amount}
+                />
                 <Switch>
                     <Route path="/kitty">
                         <Kitty />
@@ -60,6 +52,7 @@ function App() {
                         <Cart 
                             cartItems={cartItems}
                             handleAddProduct={handleAddProduct}
+                            total={total}
                         /> 
                     </Route>
                 </Switch>

@@ -4,7 +4,7 @@ import styles from './Navbar.module.css';
 import {AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 
-function Navbar() {
+function Navbar(props) {
 
   const [nav, setNav] = useState(false);
 
@@ -23,6 +23,7 @@ function Navbar() {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
+            <div className={styles.cartNumber}>{props.cartLength}</div>
             <Link to="/cart">
  
  
