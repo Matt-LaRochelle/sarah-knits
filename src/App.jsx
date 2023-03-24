@@ -25,6 +25,16 @@ function App() {
         setAmount(cartItems.length + 1);
     }
 
+    function handleDeleteProduct(n) {
+        console.log("I got clicked!")
+        setTotal(total - data[n].description)
+        setCartItems(prevItems => {
+            return prevItems.filter((item) => {
+                return data[n].id !== n
+            });
+        }); 
+        console.log(cartItems)
+    }
 
     return (
         <Router>
@@ -53,6 +63,7 @@ function App() {
                             cartItems={cartItems}
                             handleAddProduct={handleAddProduct}
                             total={total}
+                            handleDeleteProduct={handleDeleteProduct}
                         /> 
                     </Route>
                 </Switch>

@@ -11,6 +11,24 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.trash {
+    position: relative;
+    top: -3px;
+    right: -30px;
+    font-size: 2rem;
+    color: brown;
+}
+
+.trash:hover {
+    cursor: pointer;
+    color:rgb(199, 77, 77);
+}
+
+.empty {
+    text-align: center;
+    margin-top: 30px;
+}
+
 .content {
     text-align: center;
     line-height: 1.6;
@@ -34,8 +52,8 @@
 
 .purchases {
     display: flex;
-    justify-content: space-evenly;
 }
+
 .purchase_image {
     height: 100px;
     width: 100px;
@@ -43,6 +61,8 @@
     border-style: solid;
     border-color: silver;
     box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, .2);
+    position: relative;
+    left: 10vw;
 
 }
 
@@ -50,9 +70,11 @@
     /* background-color: blue; */
     line-height: 90px;
     padding-left: 10px;
-    border-left: solid;
+    /* border-left: solid; */
     border-color: rgb(175, 177, 175);
     font-family: "Montserrat", sans-serif;
+    position: absolute;
+    right: 10vw;
 }
 
 .checkout {
