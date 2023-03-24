@@ -23,7 +23,7 @@ function Navbar(props) {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <div className={styles.cartNumber}>{props.cartLength}</div>
+            {props.cartLength > 0 && <div className={styles.cartNumber}>{props.cartLength}</div>}
             <Link to="/cart">
  
  

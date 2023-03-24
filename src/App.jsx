@@ -19,10 +19,10 @@ function App() {
 
     function handleAddProduct(id) {
         setCartItems(prevItems => {
-            return [...prevItems, id]
-        })
-        setTotal(total + data[id].description)
-        setAmount(cartItems.length)
+            return [...prevItems, id];
+        });
+        setTotal(total + data[id].description);
+        setAmount(cartItems.length + 1);
     }
 
 
