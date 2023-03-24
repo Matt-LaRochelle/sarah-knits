@@ -11,13 +11,11 @@ function Cart(props) {
             <h1 className={styles.title}>Cart</h1>
             {/* {cartItems.length === 0 && <div>No items are added.</div>} */}
             <h3>{cart}</h3>
-            
-            <Purchase 
-                id={cart[0]}
-            />
-            <Purchase 
-                id={cart[1]}
-            />
+            {cart.map(item => {
+                return <Purchase 
+                    id={item - 1}
+                />
+            })}
             <div className={styles.checkout}>
                 <h2 className={styles.total}>Total: $10.00</h2>
                 <button className={styles.btn} type="submit">Purchase</button>
